@@ -3,7 +3,7 @@ Description=Shipping Service
 
 [Service]
 User=roboshop
-Environment=CART_ENDPOINT=cart.gspaws.online:8080
+Environment=CART_ENDPOINT=cart.app.gspaws.online:80
 Environment=DB_HOST=mysql.gspaws.online
 ExecStart=/bin/java -jar /app/shipping.jar
 SyslogIdentifier=shipping

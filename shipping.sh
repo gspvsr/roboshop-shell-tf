@@ -60,7 +60,7 @@ VALIDATE $? "cleaning the moven package"
 mv target/shipping-1.0.jar shipping.jar  &>>$LOGFILE
 VALIDATE $? "moving the file"
 
-cp /home/centos/roboshop-shell/shipping.service /etc/systemd/system/shipping.service &>>$LOGFILE
+cp /home/centos/roboshop-shell-tf/shipping.service /etc/systemd/system/shipping.service &>>$LOGFILE
 VALIDATE $? "copying shipping service"
 
 systemctl daemon-reload  &>>$LOGFILE
