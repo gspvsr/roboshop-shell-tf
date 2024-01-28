@@ -61,7 +61,7 @@ VALIDATE $? "moving to the app"
 pip3.6 install -r requirements.txt &>> $LOGFILE
 VALIDATE $? "python dependencies are installing"
 
-cp /home/centos/roboshop-shell/payment.service /etc/systemd/system/payment.service &>> $LOGFILE
+cp /home/centos/roboshop-shell-tf/payment.service /etc/systemd/system/payment.service &>> $LOGFILE
 VALIDATE $? "copying the payment.service file"
 
 systemctl daemon-reload &>> $LOGFILE
